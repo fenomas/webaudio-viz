@@ -8,6 +8,14 @@ Minimally draws some web audio data to a canvas
 
 ## Usage
 
+Install: 
+
+```sh
+npm i --save webaudio-viz
+```
+
+Use:
+
 ```js
 import { Viz } from 'webaudio-viz'
 
