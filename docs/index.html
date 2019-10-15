@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>webaudio-viz</title>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            font: 300 20px "Helvetica Neue", Meiryo, Helvetica, sans-serif;
+            margin: 1rem;
+        }
+
+        button {
+            font: inherit;
+            padding: 0.5rem;
+        }
+
+        canvas {
+            background-color: #222;
+            margin: 5px;
+        }
+
+        div {
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>webaudio-viz demo</h2>
+
+    <div>
+        <button id="play">Press or hit space to play a sound</button>
+    </div>
+
+    <div>
+        Click canvas or press "1/2/3" to change modes <br>
+        <canvas id="viz" width="500" height="250"></canvas>
+    </div>
+
+    <script src="bundle.js"></script>
+
+</body>
+
+</html>
