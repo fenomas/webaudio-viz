@@ -1,6 +1,6 @@
 {
   "name": "webaudio-viz",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minimally draws web audio data to a canvas",
   "main": "src/index.js",
   "files": [

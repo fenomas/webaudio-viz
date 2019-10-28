@@ -56,6 +56,10 @@ window.addEventListener('keydown', ev => {
         playSound()
         ev.preventDefault()
     }
+    if (ev.key === 'p') {
+        if (ctx.state === 'running') { ctx.suspend() }
+        else { ctx.resume() }
+    }
 })
 
 

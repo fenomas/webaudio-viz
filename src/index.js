@@ -46,6 +46,7 @@ export default class Visualizer {
     }
 
     render() {
+        if (bugfix(this)) return
         if (this.paused) return
         if (this._ctx.state !== 'running') return
         if (this.mode === 0) drawFreqBars(this)
@@ -290,3 +291,26 @@ function drawSpectrograph(viz, clearFirst) {
 
 
 
+
+
+
+// bugfix to work around analyser nodes breaking in chrome
+// https://bugs.chromium.org/p/chromium/issues/detail?id=1018499
+function bugfix(viz) {
+    var s = viz._ctx.state
+    if (!lastState) lastState = s
+    if (s === lastState) return
+    lastState = s
+    if (s === 'suspended') {
+        analyserStale = true
+    }
+    if (s === 'running' && analyserStale) {
+        viz._input.disconnect(viz._analyser)
+        viz._analyser = viz._ctx.createAnalyser()
+        viz._input.connect(viz._analyser)
+        analyserStale = false
+        return true
+    }
+}
+var lastState = ''
+var analyserStale = false
