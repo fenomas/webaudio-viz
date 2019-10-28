@@ -12,6 +12,10 @@
   },
   "author": "Andy Hall",
   "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/andyhall/webaudio-viz.git"
+  },
   "devDependencies": {
     "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9",
