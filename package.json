@@ -1,6 +1,6 @@
 {
   "name": "webaudio-viz",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Minimally draws web audio data to a canvas",
   "main": "src/index.js",
   "files": [
@@ -8,17 +8,13 @@
   ],
   "scripts": {
     "build": "cd demo && webpack --env.production",
-    "test": "cd demo && webpack-dev-server"
+    "start": "cd demo && webpack-dev-server"
   },
   "author": "Andy Hall",
   "license": "ISC",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/andyhall/webaudio-viz.git"
+    "type": "git",
+    "url": "https://github.com/andyhall/webaudio-viz.git"
   },
-  "devDependencies": {
-    "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1"
-  }
+  "dependencies": {}
 }

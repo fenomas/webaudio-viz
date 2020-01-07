@@ -6,15 +6,20 @@ Minimally draws some web audio data to a canvas
 
 ![Animated demo image](docs/demo.gif)
 
-## Usage
+## Install
 
-Install: 
+Install via npm: 
 
 ```sh
 npm i --save webaudio-viz
 ```
 
-Use:
+To build or run the local demo use the npm scripts. If you 
+don't have webpack installed globally, you'll need to do 
+`npm i -D webpack webpack-cli webpack-dev-server` first.
+
+
+## Usage
 
 ```js
 import { Viz } from 'webaudio-viz'
