@@ -10,7 +10,7 @@ var canvas = document.querySelector('#viz')
  * 
 */
 
-var ctx = new AudioContext()
+var ctx = new (window.AudioContext || window.webkitAudioContext)()
 
 var master = ctx.createGain()
 master.connect(ctx.destination)
