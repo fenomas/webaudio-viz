@@ -77,10 +77,10 @@ export default class Visualizer {
 
 function makeColor(val) {
     if (val === 0) return '#000'
+    if (val > 0.99) return '#fff'
     var h = Math.round(-80 + 130 * val)
     var s = 100
     var l = Math.round(20 + 50 * val)
-    if (val > 0.99) l += 30
     return `hsl(${h},${s}%,${l}%)`
 }
 

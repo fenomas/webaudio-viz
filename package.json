@@ -14,7 +14,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andyhall/webaudio-viz.git"
+    "url": "https://github.com/fenomas/webaudio-viz.git"
   },
   "dependencies": {}
 }

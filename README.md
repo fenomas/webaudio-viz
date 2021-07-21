@@ -2,7 +2,7 @@
 
 Minimally draws some web audio data to a canvas
 
-[Live demo page](https://andyhall.github.io/webaudio-viz/)
+[Live demo page](https://fenomas.github.io/webaudio-viz/)
 
 ![Animated demo image](docs/demo.gif)
 
